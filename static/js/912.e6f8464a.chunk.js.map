@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/912.e6f8464a.chunk.js","mappings":"8HAMA,UAJiB,WACf,OAAO,qCACR,C","sources":["views/NotFound/NotFound.jsx"],"sourcesContent":["import {} from './NotFound.styled';\n\nconst NotFound = () => {\n  return <div>NotFound</div>;\n};\n\nexport default NotFound;\n"],"names":[],"sourceRoot":""}
