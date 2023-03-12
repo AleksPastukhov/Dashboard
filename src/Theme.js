@@ -5,6 +5,7 @@ export const theme = {
     inputTextColor: '#7D7F8E',
     accentСolor: '#8941FF',
     backgroundColor: '#111216',
+    navBackgroundColor: '#191C23',
     sectionBackgroundColor: '#242731',
     iconBackgraundColor: 'rgba(66, 204, 88, 0.15)',
   },

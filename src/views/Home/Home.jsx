@@ -1,10 +1,11 @@
-// import { Suspense } from 'react';
+import { Suspense } from 'react';
 import { useState, useEffect } from 'react';
-// import { Outlet } from 'react-router-dom';
 import StatisticSection from '../../components/StatisticSection/StatisticSection';
 import { getData } from '../../services/vindevApi';
+import { Sidebar } from '../../components/Sidebar/Sidebar';
+import { Header } from '../../components/Header/Header';
 
-import {} from './Home.styled';
+import { Container, Wrapper } from './Home.styled';
 
 const Home = () => {
   const [statisticsData, setStatisticsData] = useState(null);
@@ -19,7 +20,17 @@ const Home = () => {
     return <h2>Loading...</h2>;
   }
 
-  return <StatisticSection statisticsData={statisticsData} />;
+  return (
+    <Suspense>
+      <Container>
+        <Sidebar />
+        <Wrapper>
+          <Header />
+          <StatisticSection statisticsData={statisticsData} />
+        </Wrapper>
+      </Container>
+    </Suspense>
+  );
 };
 
 export default Home;

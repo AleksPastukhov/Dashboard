@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  max-width: 1757px;
+  width: 100%;
 `;
 
 export const SectionList = styled.ul`

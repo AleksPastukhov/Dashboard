@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
 body {
-  background-color: ${p => p.theme.colors.backgroundColor};
+
   color: ${p => p.theme.colors.primaryTextColor};
   margin: 0;
   font-family: 'Metropolis' ,sans-serif;
