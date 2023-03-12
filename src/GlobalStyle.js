@@ -2,11 +2,18 @@ import 'modern-normalize';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+  @font-face {
+    font-family: "Metropolis";
+    src: url("../assets/Metropolis-Regular.otf");
+    src: url("../assets/Metropolis-Medium.otf");
+  }
+
 body {
+  background-color: ${p => p.theme.colors.backgroundColor};
+  color: ${p => p.theme.colors.primaryTextColor};
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Metropolis' ,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
