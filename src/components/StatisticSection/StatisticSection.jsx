@@ -6,7 +6,7 @@ import {
   Section,
   SectionList,
   SectionItem,
-  IconBox,
+  Icon,
   InfoBox,
   Value,
   Description,
@@ -19,55 +19,46 @@ const StatisticSection = ({ statisticsData }) => {
     <Section>
       <SectionList>
         <SectionItem>
-          <IconBox>
-            <svg width="24" height="24">
-              <use href={`${sprite}#user`}></use>
-            </svg>
-          </IconBox>
+          <Icon className="user">
+            <use href={`${sprite}#user`}></use>
+          </Icon>
           <InfoBox>
             <Value>{iam_users}</Value>
             <Description>IAM Users</Description>
           </InfoBox>
         </SectionItem>
         <SectionItem>
-          <IconBox>
-            <svg width="24" height="24">
-              <use href={`${sprite}#setting`}></use>
-            </svg>
-          </IconBox>
+          <Icon className="setting">
+            <use href={`${sprite}#setting`}></use>
+          </Icon>
+
           <InfoBox>
             <Value>{iam_roles}</Value>
             <Description>IAM Roles</Description>
           </InfoBox>
         </SectionItem>
         <SectionItem>
-          <IconBox>
-            <svg width="24" height="24">
-              <use href={`${sprite}#keyhole`}></use>
-            </svg>
-          </IconBox>
+          <Icon className="keyhole">
+            <use href={`${sprite}#keyhole`}></use>
+          </Icon>
           <InfoBox>
             <Value>{iam_policies}</Value>
             <Description>IAM Policies</Description>
           </InfoBox>
         </SectionItem>
         <SectionItem>
-          <IconBox>
-            <svg width="24" height="24">
-              <use href={`${sprite}#share`}></use>
-            </svg>
-          </IconBox>
+          <Icon className="share">
+            <use href={`${sprite}#share`}></use>
+          </Icon>
           <InfoBox>
             <Value>{compute_resources}</Value>
             <Description>Compute Resources</Description>
           </InfoBox>
         </SectionItem>
         <SectionItem>
-          <IconBox>
-            <svg width="24" height="24">
-              <use href={`${sprite}#games`}></use>
-            </svg>
-          </IconBox>
+          <Icon className="games">
+            <use href={`${sprite}#games`}></use>
+          </Icon>
           <InfoBox>
             <Value>{games}</Value>
             <Description>Games</Description>

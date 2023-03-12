@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { useState, useEffect } from 'react';
 import StatisticSection from '../../components/StatisticSection/StatisticSection';
+import GeneralSales from '../../components/GeneralSales/GeneralSales';
 import { getData } from '../../services/vindevApi';
 import { Sidebar } from '../../components/Sidebar/Sidebar';
 import { Header } from '../../components/Header/Header';
@@ -27,6 +28,7 @@ const Home = () => {
         <Wrapper>
           <Header />
           <StatisticSection statisticsData={statisticsData} />
+          <GeneralSales statisticsData={statisticsData} />
         </Wrapper>
       </Container>
     </Suspense>

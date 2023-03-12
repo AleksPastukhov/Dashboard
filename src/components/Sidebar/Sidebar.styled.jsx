@@ -34,7 +34,7 @@ export const NavList = styled.ul`
   gap: 20px;
 `;
 
-export const NavItem = styled.ul`
+export const NavItem = styled.li`
   border-radius: 50%;
 `;
 

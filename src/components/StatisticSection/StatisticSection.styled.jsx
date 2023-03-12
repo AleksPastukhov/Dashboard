@@ -22,11 +22,26 @@ export const SectionItem = styled.li`
   box-shadow: ${p => p.theme.boxShadow};
 `;
 
-export const IconBox = styled.div`
+export const Icon = styled.svg`
+  width: 48px;
+  height: 48px;
   padding: 12px;
-  height: 100%;
-  background-color: ${p => p.theme.colors.iconBackgraundColor};
   border-radius: 8px;
+  &.user {
+    background-color: ${p => p.theme.colors.userIconBackgraundColor};
+  }
+  &.setting {
+    background-color: ${p => p.theme.colors.settingIconBackgraundColor};
+  }
+  &.keyhole {
+    background-color: ${p => p.theme.colors.keyholeIconBackgraundColor};
+  }
+  &.share {
+    background-color: ${p => p.theme.colors.shareIconBackgraundColor};
+  }
+  &.games {
+    background-color: ${p => p.theme.colors.gamesIconBackgraundColor};
+  }
 `;
 
 export const InfoBox = styled.div``;
