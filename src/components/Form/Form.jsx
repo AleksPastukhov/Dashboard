@@ -9,6 +9,7 @@ import {
   TitleBox,
   Title,
   Subtitle,
+  LoginForm,
 } from './Form.styled';
 
 const Form = () => {
@@ -26,50 +27,52 @@ const Form = () => {
       initialValues={{ name: '', email: '', password: '' }}
       onSubmit={handleSubmit}
     >
-      <UserForm>
-        <TitleBox>
-          <Title>
+      <LoginForm>
+        <UserForm>
+          <TitleBox>
+            <Title>
+              {locationPath !== '/login' ? (
+                <NavLink to="login">Welcome</NavLink>
+              ) : (
+                <NavLink to="/">Welcome back</NavLink>
+              )}
+            </Title>
+            <Subtitle>Welcome! Please enter your details</Subtitle>
+          </TitleBox>
+          <FormWrapper>
             {locationPath !== '/login' ? (
-              <NavLink to="login">Welcome</NavLink>
+              <>
+                <Input type="text" name="name" placeholder="Name" required />
+                <ErrorMessage name="name" />
+              </>
             ) : (
-              <NavLink to="/">Welcome back</NavLink>
+              <></>
             )}
-          </Title>
-          <Subtitle>Welcome! Please enter your details</Subtitle>
-        </TitleBox>
-        <FormWrapper>
-          {locationPath !== '/login' ? (
-            <>
-              <Input type="text" name="name" placeholder="Name" required />
-              <ErrorMessage name="name" />
-            </>
-          ) : (
-            <></>
-          )}
-          <Input type="email" name="email" placeholder="Email" required />
-          <ErrorMessage name="number" />
-          <Input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-          <ErrorMessage name="number" />
-        </FormWrapper>
+            <Input type="email" name="email" placeholder="Email" required />
+            <ErrorMessage name="number" />
+            <Input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <ErrorMessage name="number" />
+          </FormWrapper>
 
-        <FormButton type="submit">
-          {locationPath !== '/login' ? 'Create account' : 'Log in'}
-        </FormButton>
+          <FormButton type="submit">
+            {locationPath !== '/login' ? 'Create account' : 'Log in'}
+          </FormButton>
 
-        <LoginButton>
-          Or
-          {locationPath !== '/login' ? (
-            <NavLink to="login"> Log in</NavLink>
-          ) : (
-            <NavLink to="/"> Sing Up</NavLink>
-          )}
-        </LoginButton>
-      </UserForm>
+          <LoginButton>
+            Or
+            {locationPath !== '/login' ? (
+              <NavLink to="login"> Log in</NavLink>
+            ) : (
+              <NavLink to="/"> Sing Up</NavLink>
+            )}
+          </LoginButton>
+        </UserForm>
+      </LoginForm>
     </Formik>
   );
 };

@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 import { Form, Field } from 'formik';
 
+export const LoginForm = styled.div`
+  background-color: ${p => p.theme.colors.backgroundColor};
+  height: 100vh;
+  padding: 160px;
+`;
+
 export const UserForm = styled(Form)`
   display: flex;
   flex-direction: column;
@@ -9,7 +15,7 @@ export const UserForm = styled(Form)`
   background-color: ${p => p.theme.colors.backgroundColors};
   color: ${p => p.theme.colors.colorText};
   width: 500px;
-  margin: 160px auto 0;
+  margin: auto;
 `;
 
 export const Input = styled(Field)`
