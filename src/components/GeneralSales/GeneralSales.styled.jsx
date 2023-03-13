@@ -8,11 +8,18 @@ export const Section = styled.section`
   width: 100%;
 `;
 
-export const Caption = styled.caption`
-  display: flex;
+export const Table = styled.table`
+  border: 0;
+  table-layout: fixed;
   align-items: center;
-  justify-content: space-between;
-  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  color: ${p => p.theme.colors.primaryTextColor};
+`;
+
+export const Caption = styled.caption`
+  text-align: center;
   color: red;
   margin-bottom: 32px;
 
@@ -22,15 +29,11 @@ export const Caption = styled.caption`
   line-height: calc(24 / 18);
   color: ${p => p.theme.colors.primaryTextColor};
 `;
-
-export const Table = styled.table`
-  border: 0;
-  table-layout: fixed;
+export const CaptionBox = styled.div`
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  font-size: 13px;
-  line-height: calc(20 / 13);
-  color: ${p => p.theme.colors.primaryTextColor};
 `;
 
 export const TableHead = styled.thead`
@@ -111,7 +114,6 @@ export const TableButton = styled.button`
   align-items: center;
   font-size: 13px;
   line-height: calc(20 / 13);
-  color: ${p => p.theme.colors.primaryTextColor};
   cursor: pointer;
   background: transparent;
   border: none;
@@ -121,4 +123,9 @@ export const TableButton = styled.button`
   text-align: center;
   text-decoration: none;
   text-indent: 0;
+
+  color: ${p =>
+    p.showModal
+      ? p.theme.colors.activeButtonColor
+      : p.theme.colors.primaryTextColor};
 `;

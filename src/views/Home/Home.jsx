@@ -8,7 +8,7 @@ import { Header } from 'components/Header/Header';
 
 import { Container, Wrapper } from './Home.styled';
 import { ModalWindow } from 'components/Modal/Modal';
-import { ModalList } from 'components/GeneralSales/ModalList/ModalList';
+import { ModalList } from 'components/ModalList/ModalList';
 
 const Home = () => {
   const [statisticsData, setStatisticsData] = useState(null);
@@ -32,6 +32,7 @@ const Home = () => {
           <Header />
           <StatisticSection statisticsData={statisticsData} />
           <GeneralSales
+            showModal={showModal}
             statisticsData={statisticsData}
             onClick={() => {
               setShowModal(prevState => !prevState);

@@ -1,6 +1,7 @@
 import {
   Section,
   Caption,
+  CaptionBox,
   Icon,
   TableButton,
   Table,
@@ -16,7 +17,7 @@ import {
 import pokemon from '../../icons/pocemonImg.jpg';
 import sprite from '../../icons/sprite.svg';
 
-const GeneralSales = ({ statisticsData, onClick, children }) => {
+const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
   const {
     model: { name },
     card_name,
@@ -32,19 +33,32 @@ const GeneralSales = ({ statisticsData, onClick, children }) => {
 
   return (
     <Section>
-      <Caption>
-        General Sales / Time
-        <TableButton type="button" onClick={onClick}>
-          <Icon width="24" height="24">
-            <use href={`${sprite}#setting`}></use>
-          </Icon>
-          Table settings
-          <Icon width="20" height="20">
-            <use href={`${sprite}#arrow-down`}></use>
-          </Icon>
-        </TableButton>
-      </Caption>
       <Table>
+        <Caption>
+          <CaptionBox>
+            <span>General Sales / Time</span>
+            <TableButton type="button" onClick={onClick} showModal={showModal}>
+              <Icon width="24" height="24">
+                <use
+                  href={
+                    showModal
+                      ? `${sprite}#settingsActive`
+                      : `${sprite}#settingsNotActive`
+                  }
+                ></use>
+              </Icon>
+              Table settings
+              <Icon width="20" height="20">
+                href=
+                <use
+                  href={
+                    showModal ? `${sprite}#arrow-up` : `${sprite}#arrow-down`
+                  }
+                ></use>
+              </Icon>
+            </TableButton>
+          </CaptionBox>
+        </Caption>
         <TableHead>
           <HeadColumn>
             <TableHeadRows className="model">Card model</TableHeadRows>
