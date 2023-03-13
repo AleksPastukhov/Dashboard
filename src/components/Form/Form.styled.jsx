@@ -26,12 +26,6 @@ export const Input = styled(Field)`
   font-size: 15px;
   line-height: calc(24 / 15);
   padding: 19px 15px;
-  /* &:hover,
-  &:active,
-  &:focus {
-    background-color: ${p => p.theme.colors.white};
-    outline: transparent;
-  } */
 `;
 
 export const FormWrapper = styled.div`
@@ -71,11 +65,6 @@ export const FormButton = styled.button`
   font-weight: 500;
   font-size: 15px;
   line-height: calc(24 / 15);
-  /* transition: box-shadow 250ms ease, transform 250ms ease;
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: ${p => p.theme.boxShadow};
-  } */
 `;
 export const LoginButton = styled.p`
   text-align: center;

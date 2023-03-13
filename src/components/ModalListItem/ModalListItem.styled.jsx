@@ -27,10 +27,3 @@ export const Label = styled.label`
     margin: -1px;
   }
 `;
-
-// export const List = styled.ul``;
-// export const List = styled.ul``;
-// export const List = styled.ul``;
-// export const List = styled.ul``;
-// export const List = styled.ul``;
-// export const List = styled.ul``;

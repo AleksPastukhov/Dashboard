@@ -15,7 +15,6 @@ import {
 const Form = () => {
   const location = useLocation();
   const locationPath = location.pathname;
-  console.log(locationPath);
 
   const navigate = useNavigate();
   const handleSubmit = () => {

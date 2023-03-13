@@ -1,5 +1,4 @@
-// import { Suspense } from 'react';
-// import { Outlet } from 'react-router-dom';
+
 import sprite from '../../icons/sprite.svg';
 
 import {

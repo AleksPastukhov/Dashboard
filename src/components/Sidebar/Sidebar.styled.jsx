@@ -44,7 +44,6 @@ export const NavItemLink = styled(NavLink)`
   justify-content: center;
   padding: 12px;
   border-radius: 50%;
-  /* fill: ${p => p.theme.colors.inputTextColor}; */
   stroke: ${p => p.theme.colors.inputTextColor};
   background-color: ${p => p.theme.colors.navBackgroundColor};
   transition: stroke ${p => p.theme.transition},
@@ -52,7 +51,6 @@ export const NavItemLink = styled(NavLink)`
 
   &:hover,
   &:focus {
-    /* fill: ${p => p.theme.colors.primaryTextColor}; */
     stroke: ${p => p.theme.colors.primaryTextColor};
     background-color: ${p => p.theme.colors.accentСolor};
   }

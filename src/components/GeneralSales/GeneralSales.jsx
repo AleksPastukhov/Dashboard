@@ -93,7 +93,11 @@ const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
             <TableRows>{rating}%</TableRows>
             <TableRows>{status}</TableRows>
             <TableRows>{price}</TableRows>
-            <TableRows>Options</TableRows>
+            <TableRows>
+              <Icon width="24" height="24">
+                <use href={`${sprite}#action-menu`}></use>
+              </Icon>
+            </TableRows>
           </HeadColumn>
           <HeadColumn>
             <TableRows>
@@ -112,7 +116,11 @@ const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
             <TableRows>{rating}%</TableRows>
             <TableRows>{status}</TableRows>
             <TableRows>{price}</TableRows>
-            <TableRows>Options</TableRows>
+            <TableRows>
+              <Icon width="24" height="24">
+                <use href={`${sprite}#action-menu`}></use>
+              </Icon>
+            </TableRows>
           </HeadColumn>
           <HeadColumn>
             <TableRows>
@@ -131,7 +139,11 @@ const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
             <TableRows>{rating}%</TableRows>
             <TableRows>{status}</TableRows>
             <TableRows>{price}</TableRows>
-            <TableRows>Options</TableRows>
+            <TableRows>
+              <Icon width="24" height="24">
+                <use href={`${sprite}#action-menu`}></use>
+              </Icon>
+            </TableRows>
           </HeadColumn>
           <HeadColumn>
             <TableRows>
@@ -150,7 +162,11 @@ const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
             <TableRows>{rating}%</TableRows>
             <TableRows>{status}</TableRows>
             <TableRows>{price}</TableRows>
-            <TableRows>Options</TableRows>
+            <TableRows>
+              <Icon width="24" height="24">
+                <use href={`${sprite}#action-menu`}></use>
+              </Icon>
+            </TableRows>
           </HeadColumn>
           <HeadColumn>
             <TableRows>
@@ -169,7 +185,11 @@ const GeneralSales = ({ statisticsData, onClick, children, showModal }) => {
             <TableRows>{rating}%</TableRows>
             <TableRows>{status}</TableRows>
             <TableRows>{price}</TableRows>
-            <TableRows>Options</TableRows>
+            <TableRows>
+              <Icon width="24" height="24">
+                <use href={`${sprite}#action-menu`}></use>
+              </Icon>
+            </TableRows>
           </HeadColumn>
         </Body>
       </Table>
