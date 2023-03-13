@@ -11,9 +11,9 @@
 <path fill="none" stroke="#ed2d95" style="stroke: var(--color1, #ed2d95)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2395" d="M7.368 17.973v-10.034"></path>
 </symbol>
 <symbol id="action-menu" viewBox="0 0 32 32">
-<path fill="#7d869e" style="fill: var(--color5, #7d869e)" d="M18.667 8c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
-<path fill="#7d869e" style="fill: var(--color5, #7d869e)" d="M18.667 16c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
-<path fill="#7d869e" style="fill: var(--color5, #7d869e)" d="M18.667 24c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
+<path fill="#B1B1B1" style="stroke: none" d="M18.667 8c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
+<path fill="#B1B1B1" style="stroke: none" d="M18.667 16c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
+<path fill="#B1B1B1" style="stroke: none" d="M18.667 24c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667z"></path>
 </symbol>
 <symbol id="Activeoff-1" viewBox="0 0 32 32">
 <path fill="none" stroke="#60677a" style="stroke: var(--color6, #60677a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667" d="M4 1.333h24c1.473 0 2.667 1.194 2.667 2.667v24c0 1.473-1.194 2.667-2.667 2.667h-24c-1.473 0-2.667-1.194-2.667-2.667v-24c0-1.473 1.194-2.667 2.667-2.667z"></path>
