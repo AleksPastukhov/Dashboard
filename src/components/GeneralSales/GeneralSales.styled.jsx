@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
+  position: relative;
   background-color: ${p => p.theme.colors.sectionBackgroundColor};
   border-radius: 4px;
   padding: 20px 32px 20px 32px;

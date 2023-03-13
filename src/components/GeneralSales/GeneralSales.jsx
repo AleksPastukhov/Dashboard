@@ -16,7 +16,7 @@ import {
 import pokemon from '../../icons/pocemonImg.jpg';
 import sprite from '../../icons/sprite.svg';
 
-const GeneralSales = ({ statisticsData }) => {
+const GeneralSales = ({ statisticsData, onClick, children }) => {
   const {
     model: { name },
     card_name,
@@ -34,7 +34,7 @@ const GeneralSales = ({ statisticsData }) => {
     <Section>
       <Caption>
         General Sales / Time
-        <TableButton type="button">
+        <TableButton type="button" onClick={onClick}>
           <Icon width="24" height="24">
             <use href={`${sprite}#setting`}></use>
           </Icon>
@@ -159,6 +159,7 @@ const GeneralSales = ({ statisticsData }) => {
           </HeadColumn>
         </Body>
       </Table>
+      {children}
     </Section>
   );
 };

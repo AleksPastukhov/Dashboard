@@ -70,6 +70,17 @@ img {
 address {
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+ width: 2px;
+}
+::-webkit-scrollbar-track {
+background: ${p => p.theme.colors.scrollBarColor};
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: ${p => p.theme.colors.scrollBarThumbColor};
+}
 `;
 
 export default GlobalStyle;
