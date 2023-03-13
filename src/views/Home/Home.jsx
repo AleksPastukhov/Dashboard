@@ -24,6 +24,19 @@ const Home = () => {
     return <h2>Loading...</h2>;
   }
 
+  const onBackdropClick = e => {
+    if (e.target.type === 'button') {
+      setShowModal(prevState => !prevState);
+      return;
+    }
+    if (!showModal) {
+      return;
+    }
+    if (e.currentTarget !== e.target) {
+      setShowModal(prevState => !prevState);
+    }
+  };
+
   return (
     <Suspense>
       <Container>
@@ -34,15 +47,11 @@ const Home = () => {
           <GeneralSales
             showModal={showModal}
             statisticsData={statisticsData}
-            onClick={() => {
-              setShowModal(prevState => !prevState);
-            }}
+            onBackdropClick={onBackdropClick}
           >
             {showModal && (
               <ModalWindow
-                onCloseModal={() => {
-                  setShowModal(prevState => !prevState);
-                }}
+                onCloseModal={() => setShowModal(prevState => !prevState)}
               >
                 {<ModalList />}
               </ModalWindow>
