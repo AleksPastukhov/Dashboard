@@ -2,6 +2,7 @@ export const theme = {
   colors: {
     primaryTextColor: '#FFFFFF',
     secondaryTextColor: '#9496A6',
+    tableHeadTextColor: 'rgba(255, 255, 255, 0.6)',
     inputTextColor: '#7D7F8E',
     accentСolor: '#8941FF',
     backgroundColor: '#111216',
